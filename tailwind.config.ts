@@ -9,34 +9,34 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#07111f",
-        foreground: "#f6f9fc",
-        surface: "#0c1a2d",
-        surfaceSoft: "#10233e",
-        line: "rgba(255,255,255,0.12)",
-        muted: "#a7b5c9",
+        background: "#f4f6f8",
+        foreground: "#102033",
+        surface: "#ffffff",
+        surfaceSoft: "#edf2f6",
+        line: "rgba(16,32,51,0.10)",
+        muted: "#5f6f81",
         brand: {
-          50: "#e8f1fb",
-          100: "#d7e8fb",
-          200: "#afcff7",
-          300: "#83b5f4",
-          400: "#579cf1",
-          500: "#2d83ed",
-          600: "#1764c1",
-          700: "#10498d",
-          800: "#0b3260",
-          900: "#081f3c"
+          50: "#eef4f8",
+          100: "#dce7ef",
+          200: "#bccfdd",
+          300: "#96b2c6",
+          400: "#6e92af",
+          500: "#456c8b",
+          600: "#35546d",
+          700: "#263d50",
+          800: "#1a2b39",
+          900: "#101d29"
         }
       },
       boxShadow: {
-        premium: "0 18px 60px rgba(3, 10, 24, 0.32)",
-        glow: "0 0 0 1px rgba(120, 177, 255, 0.25), 0 14px 40px rgba(11, 34, 70, 0.42)"
+        premium: "0 18px 60px rgba(15, 23, 42, 0.08)",
+        glow: "0 0 0 1px rgba(69, 108, 139, 0.10), 0 18px 48px rgba(15, 23, 42, 0.14)"
       },
       borderRadius: {
         "4xl": "2rem"
       },
       backgroundImage: {
-        "radial-grid": "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0)"
+        "radial-grid": "radial-gradient(circle at 1px 1px, rgba(16,32,51,0.08) 1px, transparent 0)"
       },
       animation: {
         marquee: "marquee 28s linear infinite",

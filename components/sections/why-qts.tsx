@@ -16,10 +16,10 @@ export function WhyQts() {
           <div className="grid gap-4 sm:grid-cols-2">
             {whyQts.map((item, index) => (
               <Reveal key={item} delay={index * 0.05}>
-                <div className="rounded-[24px] border border-white/10 bg-white/[0.04] p-5 shadow-premium">
+                <div className="rounded-[24px] border border-slate-200 bg-white p-5 shadow-premium">
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 text-brand-200" />
-                    <p className="text-sm leading-7 text-slate-200">{item}</p>
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 text-brand-500" />
+                    <p className="text-sm leading-7 text-slate-700">{item}</p>
                   </div>
                 </div>
               </Reveal>

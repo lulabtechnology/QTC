@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html,
@@ -14,13 +14,14 @@ body {
 
 body {
   background:
-    radial-gradient(circle at top left, rgba(60, 124, 255, 0.14), transparent 30%),
-    linear-gradient(180deg, #07111f 0%, #081321 36%, #091726 100%);
+    radial-gradient(circle at top left, rgba(109, 139, 166, 0.14), transparent 28%),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.72), transparent 26%),
+    linear-gradient(180deg, #f7f8fa 0%, #eef2f5 42%, #f4f6f8 100%);
 }
 
 ::selection {
-  background: rgba(76, 140, 255, 0.32);
-  color: white;
+  background: rgba(69, 108, 139, 0.22);
+  color: #102033;
 }
 
 a,
@@ -36,7 +37,7 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid rgba(109, 170, 255, 0.8);
+  outline: 2px solid rgba(69, 108, 139, 0.72);
   outline-offset: 2px;
 }
 
@@ -46,9 +47,9 @@ select:focus-visible {
   inset: 0;
   pointer-events: none;
   background-image:
-    radial-gradient(rgba(255, 255, 255, 0.06) 0.6px, transparent 0.6px);
+    radial-gradient(rgba(18, 29, 43, 0.06) 0.65px, transparent 0.65px);
   background-size: 12px 12px;
-  opacity: 0.1;
+  opacity: 0.08;
 }
 
 @media (prefers-reduced-motion: reduce) {

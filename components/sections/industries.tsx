@@ -16,14 +16,14 @@ export function Industries() {
         <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {industries.map((industry, index) => (
             <Reveal key={industry.title} delay={index * 0.05}>
-              <div className="group relative overflow-hidden rounded-[28px] border border-white/10">
+              <div className="group relative overflow-hidden rounded-[28px] border border-slate-200 bg-white p-2 shadow-premium">
                 <AmbientImagePanel
                   desktopImage={industry.desktopImage}
                   mobileImage={industry.mobileImage}
-                  className="min-h-[240px] rounded-[28px] border-0 shadow-none"
+                  className="min-h-[240px] rounded-[24px] border-0 shadow-none"
                 />
-                <div className="absolute inset-0 flex items-end p-6">
-                  <div className="rounded-2xl border border-white/10 bg-black/25 px-4 py-3 backdrop-blur-md transition duration-500 group-hover:bg-black/35">
+                <div className="absolute inset-0 flex items-end p-8">
+                  <div className="rounded-2xl border border-white/18 bg-[rgba(8,16,28,0.34)] px-4 py-3 backdrop-blur-md transition duration-500 group-hover:bg-[rgba(8,16,28,0.44)]">
                     <h3 className="text-lg font-semibold text-white">{industry.title}</h3>
                   </div>
                 </div>

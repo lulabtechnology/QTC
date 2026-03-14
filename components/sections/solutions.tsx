@@ -36,7 +36,7 @@ export function Solutions() {
               <div className="mt-4 flex justify-end">
                 <Link
                   href="#contacto"
-                  className="inline-flex items-center rounded-full border border-white/12 bg-white/5 px-4 py-2 text-sm text-slate-100 transition hover:border-brand-300/35 hover:bg-brand-500/10"
+                  className="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 shadow-sm transition hover:border-brand-300/45 hover:bg-slate-50"
                 >
                   Solicitar evaluación técnica
                 </Link>

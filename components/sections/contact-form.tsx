@@ -68,40 +68,40 @@ export function ContactForm() {
     <section id="contacto" className="relative py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-6">
         <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
-          <div className="rounded-[32px] border border-white/10 bg-white/[0.04] p-8 shadow-premium">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-brand-200">
+          <div className="rounded-[32px] border border-slate-200 bg-white p-8 shadow-premium">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-brand-600">
               Formulario de leads
             </p>
-            <h2 className="mt-5 text-3xl font-semibold leading-tight text-white md:text-5xl">
+            <h2 className="mt-5 text-3xl font-semibold leading-tight text-slate-900 md:text-5xl">
               Solicita asesoría técnica especializada
             </h2>
-            <p className="mt-5 text-base leading-8 text-slate-300">
+            <p className="mt-5 text-base leading-8 text-slate-600">
               Comparte el contexto de tu operación, tu industria y el tipo de solicitud.
               El equipo está preparado para responder con enfoque técnico y sentido comercial.
             </p>
 
             <div className="mt-8 space-y-4">
-              <div className="flex items-start gap-3 rounded-[22px] border border-white/10 bg-black/20 p-4">
-                <Mail className="mt-1 h-5 w-5 text-brand-100" />
+              <div className="flex items-start gap-3 rounded-[22px] border border-slate-200 bg-slate-50 p-4">
+                <Mail className="mt-1 h-5 w-5 text-brand-600" />
                 <div>
-                  <p className="text-sm font-medium text-white">Email</p>
+                  <p className="text-sm font-medium text-slate-900">Email</p>
                   <a
                     href={`mailto:${siteConfig.email}`}
-                    className="text-sm text-slate-300 transition hover:text-white"
+                    className="text-sm text-slate-600 transition hover:text-slate-900"
                   >
                     {siteConfig.email}
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 rounded-[22px] border border-white/10 bg-black/20 p-4">
-                <Phone className="mt-1 h-5 w-5 text-brand-100" />
+              <div className="flex items-start gap-3 rounded-[22px] border border-slate-200 bg-slate-50 p-4">
+                <Phone className="mt-1 h-5 w-5 text-brand-600" />
                 <div>
-                  <p className="text-sm font-medium text-white">WhatsApp directo</p>
+                  <p className="text-sm font-medium text-slate-900">WhatsApp directo</p>
                   <a
                     href={`https://wa.me/${siteConfig.whatsappDigits}`}
                     target="_blank"
-                    className="text-sm text-slate-300 transition hover:text-white"
+                    className="text-sm text-slate-600 transition hover:text-slate-900"
                   >
                     {siteConfig.whatsapp} · {siteConfig.contactName}
                   </a>
@@ -116,7 +116,7 @@ export function ContactForm() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-120px" }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="rounded-[32px] border border-white/10 bg-white/[0.04] p-6 shadow-premium md:p-8"
+            className="rounded-[32px] border border-slate-200 bg-white p-6 shadow-premium md:p-8"
           >
             <div className="grid gap-5 md:grid-cols-2">
               <Field
@@ -165,7 +165,7 @@ export function ContactForm() {
             </div>
 
             <div className="mt-5">
-              <label className="mb-2 block text-sm font-medium text-slate-100">
+              <label className="mb-2 block text-sm font-medium text-slate-800">
                 Tipo de solicitud
               </label>
               <select
@@ -173,10 +173,10 @@ export function ContactForm() {
                 onChange={(event) =>
                   setForm((prev) => ({ ...prev, requestType: event.target.value }))
                 }
-                className="h-14 w-full rounded-2xl border border-white/12 bg-slate-950/70 px-4 text-sm text-white outline-none transition focus:border-brand-300/60 focus:ring-2 focus:ring-brand-300/20"
+                className="h-14 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 text-sm text-slate-900 outline-none transition focus:border-brand-300/60 focus:ring-2 focus:ring-brand-300/20"
               >
                 {formOptions.map((option) => (
-                  <option key={option} value={option} className="bg-slate-950">
+                  <option key={option} value={option} className="bg-white">
                     {option}
                   </option>
                 ))}
@@ -184,7 +184,7 @@ export function ContactForm() {
             </div>
 
             <div className="mt-5">
-              <label className="mb-2 block text-sm font-medium text-slate-100">
+              <label className="mb-2 block text-sm font-medium text-slate-800">
                 Mensaje
               </label>
               <textarea
@@ -194,7 +194,7 @@ export function ContactForm() {
                 }
                 required
                 rows={6}
-                className="w-full rounded-2xl border border-white/12 bg-slate-950/70 px-4 py-4 text-sm text-white outline-none transition focus:border-brand-300/60 focus:ring-2 focus:ring-brand-300/20"
+                className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-900 outline-none transition focus:border-brand-300/60 focus:ring-2 focus:ring-brand-300/20"
                 placeholder="Describe brevemente tu necesidad, proyecto o contexto operativo."
               />
             </div>
@@ -203,7 +203,7 @@ export function ContactForm() {
               <button
                 type="submit"
                 disabled={status.type === "loading"}
-                className="group inline-flex items-center justify-center rounded-full border border-brand-300/30 bg-brand-500/14 px-6 py-4 text-sm font-semibold text-white transition hover:border-brand-200/50 hover:bg-brand-500/22 disabled:cursor-not-allowed disabled:opacity-70"
+                className="group inline-flex items-center justify-center rounded-full border border-brand-300/40 bg-brand-500 px-6 py-4 text-sm font-semibold text-white transition hover:border-brand-400 hover:bg-brand-600 disabled:cursor-not-allowed disabled:opacity-70"
               >
                 Enviar solicitud
                 <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-1" />
@@ -212,10 +212,10 @@ export function ContactForm() {
               <div
                 className={`max-w-sm text-sm leading-6 ${
                   status.type === "success"
-                    ? "text-emerald-300"
+                    ? "text-emerald-600"
                     : status.type === "error"
-                    ? "text-rose-300"
-                    : "text-slate-300"
+                    ? "text-rose-500"
+                    : "text-slate-600"
                 }`}
                 aria-live="polite"
               >
@@ -248,7 +248,7 @@ function Field({
 }: FieldProps) {
   return (
     <div>
-      <label htmlFor={name} className="mb-2 block text-sm font-medium text-slate-100">
+      <label htmlFor={name} className="mb-2 block text-sm font-medium text-slate-800">
         {label}
       </label>
       <input
@@ -257,7 +257,7 @@ function Field({
         value={value}
         required={required}
         onChange={(event) => onChange(event.target.value)}
-        className="h-14 w-full rounded-2xl border border-white/12 bg-slate-950/70 px-4 text-sm text-white outline-none transition focus:border-brand-300/60 focus:ring-2 focus:ring-brand-300/20"
+        className="h-14 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 text-sm text-slate-900 outline-none transition focus:border-brand-300/60 focus:ring-2 focus:ring-brand-300/20"
       />
     </div>
   );

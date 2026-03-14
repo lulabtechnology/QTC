@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/8 bg-[#07111f] py-12">
+    <footer className="border-t border-white/8 bg-[#0c1420] py-12">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-[1.2fr_0.8fr] md:px-6">
         <div>
-          <div className="relative h-10 w-[150px]">
+          <div className="relative h-12 w-[190px] md:h-14 md:w-[220px]">
             <Image
               src="/brand/logo-qts-white.png"
               alt="Quality Techno Services"

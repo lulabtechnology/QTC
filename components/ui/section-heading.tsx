@@ -20,18 +20,18 @@ export function SectionHeading({
     <div className={`${max} ${aligned}`}>
       {eyebrow ? (
         <Reveal>
-          <div className="mb-4 inline-flex items-center rounded-full border border-white/12 bg-white/5 px-4 py-2 text-[11px] uppercase tracking-[0.28em] text-brand-200">
+          <div className="mb-4 inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-[11px] uppercase tracking-[0.28em] text-brand-600 shadow-sm">
             {eyebrow}
           </div>
         </Reveal>
       ) : null}
       <Reveal delay={0.05}>
-        <h2 className="text-balance text-3xl font-semibold leading-tight text-white md:text-5xl">
+        <h2 className="text-balance text-3xl font-semibold leading-tight text-slate-900 md:text-5xl">
           {title}
         </h2>
       </Reveal>
       <Reveal delay={0.12}>
-        <p className="mt-5 text-pretty text-base leading-7 text-slate-300 md:text-lg">
+        <p className="mt-5 text-pretty text-base leading-7 text-slate-600 md:text-lg">
           {description}
         </p>
       </Reveal>

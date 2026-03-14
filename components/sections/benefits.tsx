@@ -22,14 +22,14 @@ export function Benefits() {
 
             return (
               <Reveal key={benefit.title} delay={index * 0.05}>
-                <div className="group relative h-full overflow-hidden rounded-[26px] border border-white/10 bg-white/[0.04] p-6 shadow-premium transition duration-500 hover:-translate-y-1 hover:border-brand-300/25">
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),transparent_36%),radial-gradient(circle_at_bottom_left,rgba(67,135,255,0.14),transparent_32%)]" />
+                <div className="group relative h-full overflow-hidden rounded-[26px] border border-slate-200 bg-white p-6 shadow-premium transition duration-500 hover:-translate-y-1 hover:border-brand-300/45">
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(248,250,252,0.88)_42%,transparent),radial-gradient(circle_at_bottom_left,rgba(148,170,188,0.16),transparent_32%)]" />
                   <div className="relative z-10">
-                    <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/12 bg-white/5 text-brand-100">
+                    <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-brand-600">
                       <Icon className="h-5 w-5" />
                     </div>
-                    <h3 className="text-lg font-semibold text-white">{benefit.title}</h3>
-                    <p className="mt-4 text-sm leading-7 text-slate-300">{benefit.description}</p>
+                    <h3 className="text-lg font-semibold text-slate-900">{benefit.title}</h3>
+                    <p className="mt-4 text-sm leading-7 text-slate-600">{benefit.description}</p>
                   </div>
                 </div>
               </Reveal>
